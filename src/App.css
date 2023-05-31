@@ -1,8 +1,12 @@
 .App {
   text-align: center;
 }
-
+p{
+  opacity: 0;
+}
 .App-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  opacity: 0;
   height: 40vmin;
   pointer-events: none;
 }
@@ -32,6 +36,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
