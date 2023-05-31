@@ -8,26 +8,9 @@ function App() {
 
   useEffect(() => {
     console.log(logoItem)
-    gsap.to(
-      logoItem,
-        .8,
-      {
-        opacity: 1,
-        y: -20,
-        ease: Power3.easeOut
-      }
-    )
-    TweenMax.to(
-      textItem,
-        .8,
-      {
-        opacity: 1,
-        y: -20,
-        ease: Power3.easeOut,
-        delay: .2 
-      }
-    )
-  })
+    TweenMax.to(logoItem,.8,{opacity: 1,y: -20,ease: Power3.easeOut,})
+    TweenMax.to( textItem,.8,{opacity: 1,y: -20, ease: Power3.easeOut,delay: .2 })
+  },[])
 
   return (
     <div className="App">
