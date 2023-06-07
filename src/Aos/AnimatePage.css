@@ -1,0 +1,9 @@
+.card {
+    background-color: aqua;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #ff0000, #00ff00);
+    border-image-slice: 1;
+    max-width: 500px;
+    margin: 300px 500px;
+}
