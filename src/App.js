@@ -3,6 +3,7 @@ import './App.css';
 import { TweenMax } from 'gsap/gsap-core';
 import { Power3, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import AnimatedPage from './Aos/AnimatedPage';
 
 gsap.registerPlugin(ScrollTrigger);
 function App() {
@@ -19,19 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className='App-header'>
-        <div className="circle-container">
-          <div
-            ref={el => circle = el}
-            className="circle"></div>
-          <div
-            ref={el => circleRed = el}
-            className="circle red"></div>
-          <div
-            ref={el => circleBlue = el}
-            className="circle blue"></div>
-        </div>
-      </header>
+      <AnimatedPage/>
     </div>
   );
 }
